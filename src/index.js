@@ -11,6 +11,9 @@ const button = document.querySelector('.load-more');
 
 button.classList.add('is-hidden');
 
+let imageName;
+let page = 1;
+
 form.addEventListener('submit', event => {
     event.preventDefault();
     imageName = form.elements.searchQuery.value;
